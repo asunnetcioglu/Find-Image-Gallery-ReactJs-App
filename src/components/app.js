@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SearchBar from './search-bar/searchBar';
 import ImageList from './image/imageList';
 import axios from 'axios';
 import './app.css';
 
-class App extends Component {
+class App extends React.Component {
 
 // Eski usul
 //onSearchImage(search) {
@@ -46,8 +46,7 @@ onSearchImage = async (search) => { //asenkron yükledik
 }
 
 
-
-  render() {
+  render () {
     return (
       <div className="app-container">
         <div className="title-cont">
